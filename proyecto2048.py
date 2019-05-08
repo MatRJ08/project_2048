@@ -20,7 +20,7 @@ leaderboard = []
 score=[0]
 nombre=[0]
 matriz=[[0,0,0,0],
-                    [0,0,0,0],
+                    [1024,1024,0,0],
                     [0,0,0,0],
                     [0,0,0,0]]
 base=[8]
@@ -128,10 +128,10 @@ def perdio(x):
 
 
 def gano():
-    print("Has ganado")
-    print(score[0])
     nuevo_score()
     imprimir_mayor()
+    print("Has ganado")
+    print(nombre[0]+"= "+str(score[0]))
     pygame.quit()
     sys.exit()
     
